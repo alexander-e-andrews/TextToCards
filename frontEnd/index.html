@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Card Creator</title>
+    <script src="/frontEnd/index.js"></script>
+</head>
+
+<body >
+    <div style="display:grid; grid-template-columns: 50% 50%; box-sizing: border-box;">
+        <div style= "max-height: auto; max-width:100%;">
+            <img src="" id="preview" alt="Card" style= "max-height: auto; max-width:100%;">
+        </div>
+        
+        <div style="">
+            <label for="background">Select background:</label>
+            <input type="file" id="background" name="background" accept="image/png, image/jpeg">
+            <br><br>
+            <label for="csvSource">Select csvSource:</label>
+            <input type="file" id="csvSource" name="csvSource" accept=".csv">
+            <br><br>
+            <button id="btPreviewCard" onclick="PreviewCard()">Preview Text</button>
+            <br><br>
+            <button id="btGenerateCards" onclick="GenerateCards()">Generate All Images</button>
+        </div>
+    </div>
+</body>
+
+</html>
